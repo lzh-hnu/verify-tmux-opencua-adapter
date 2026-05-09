@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verify tmux for OpenCUA: Open Session Interface</title>
+    <meta name="description" content="A verification page for an OpenCUA adapter that exposes terminal sessions through tmux.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="kicker">tmux verification research</p>
+          <h1>Verify tmux for OpenCUA: Open Session Interface</h1>
+          <p class="subtitle">A verification page for an OpenCUA adapter that exposes terminal sessions through tmux.</p>
+          <div class="meta-grid" aria-label="Project metadata">
+            <div class="meta-item"><span class="meta-label">Agent</span><span class="meta-value">OpenCUA</span></div>
+            <div class="meta-item"><span class="meta-label">Track</span><span class="meta-value">Adapter Verification</span></div>
+            <div class="meta-item"><span class="meta-label">Artifact</span><span class="meta-value">Static GitHub Pages verification</span></div>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img class="hero-image" src="./assets/hero.png" width="700" height="500" alt="Verification illustration for Verify tmux for OpenCUA: Open Session Interface">
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Verification Brief</h2>
+        <div>
+          <p>The OpenCUA adapter is checked as an interface contract: observed panes, available actions, and terminal text should stay aligned.</p>
+          <p>This page uses the shared visual standard while focusing on openness, portability, and explicit state exchange.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Check Question</h2>
+        <div class="callout">
+          <p>What interface guarantees are needed before OpenCUA can treat a tmux session as a dependable workspace?</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Trace Notes</h2>
+        <div>
+          <ul>
+            <li>Pane metadata is exposed without hiding terminal provenance.</li>
+            <li>Resize and focus events are normalized before interpretation.</li>
+            <li>Adapter responses include recoverable state markers.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Review Lens</h2>
+        <div>
+          <ul>
+            <li>Interface clarity</li>
+            <li>Portability across shells</li>
+            <li>Recoverable state exposure</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Verification Discussion</h2>
+        <div>
+          <p>The verification concern is not only whether OpenCUA can act, but whether another system can audit the same state contract afterward.</p>
+          <p>The next layer would add conformance checks for pane discovery, command submission, and observation refresh behavior.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Generated as a public verification site for OpenCUA and tmux adaptation.</p>
+    </footer>
+  </body>
+</html>
